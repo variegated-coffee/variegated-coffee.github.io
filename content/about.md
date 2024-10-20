@@ -2,13 +2,9 @@
 title = 'About Variegated Coffee'
 draft = false
 date = 2024-09-17
+menus = 'main'
+name = 'about'
 +++
-Innovative open-source hardware and firmware solutions for the ultimate espresso experience.
-
----
-
-## About Variegated Coffee
-
 Variegated Coffee is on a mission to revolutionize espresso machines with open-source hardware and firmware. Our flagship products, the Open LCC and the All Purpose Espresso Controller, are designed to replace and enhance the electronics of existing machines, leveraging the power of RP2040 and ESP32-S3 microcontrollers.
 
 Sustainability is at the heart of our project. By upgrading your espresso machine with our components, you can extend its lifespan and reduce electronic waste. Our solutions offer a more eco-friendly and cost-effective alternative to buying a new machine.

@@ -33,11 +33,6 @@ name = "Discord"
 icon = "message-circle"
 url = "https://discord.gg/gn9aGHAc3U"
 
-[[menu.main]]
-name = "About"
-url = "/about"
-weight = 3
-
 [markup]
   [markup.goldmark]
     [markup.goldmark.extensions]
