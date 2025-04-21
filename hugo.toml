@@ -9,13 +9,14 @@ pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
 [params]
-	customcss = ["css/colors.css"]
+	customcss = ["css/colors.css", "css/font-sizes.css"]
 	mode="light" # color-mode → light,dark,toggle or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
 	subtitle = "Open source hardware and firmware for espresso machines"
 	mathjax = true # enable MathJax support
 	katex = true # enable KaTeX support
 	math = true
+  tableOfContents = true
 
 [outputs]
   home = ['html', 'rss']
@@ -41,3 +42,6 @@ url = "https://discord.gg/gn9aGHAc3U"
         [markup.goldmark.extensions.passthrough.delimiters]
           block = [['\[', '\]'], ['$$', '$$']]
           inline = [['\(', '\)']]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 2
