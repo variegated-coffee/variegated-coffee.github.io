@@ -6,7 +6,7 @@ menus = 'main'
 name = 'about'
 weight = 10
 +++
-Variegated Coffee is on a mission to revolutionize espresso machines with open-source hardware and firmware. Our flagship products, the Open LCC and the All Purpose Espresso Controller, are designed to replace and enhance the electronics of existing machines, leveraging the power of RP2040 and ESP32-S3 microcontrollers.
+Variegated Coffee is aimed at giving ["enginistas"](/about/intended-audience), that special combination of engineers and home baristas, the open source tools they need to get the absolute most out of their espresso machines.
 
 Sustainability is at the heart of our project. By upgrading your espresso machine with our components, you can extend its lifespan and reduce electronic waste. Our solutions offer a more eco-friendly and cost-effective alternative to buying a new machine.
 
@@ -26,10 +26,8 @@ Sustainability is equally important to us. Instead of discarding your espresso m
 
 Join us in our mission to innovate and make the most of the machines we love. Together, we can create a more sustainable and enjoyable coffee experience.
 
----
-
 ## Contribute
 
-Join our community of innovators! Whether you're a hardware enthusiast, firmware developer, or coffee aficionado, your contributions can help shape the future of espresso machine technology.
+Join our community of enginistas! Whether you're a hardware enthusiast, firmware developer, or coffee aficionado, your contributions can help shape the future of espresso machine technology.
 
-Explore our [GitHub repository](https://github.com/variegated-coffee) to access the code, report issues, and contribute. Connect with us on our [Discord server](https://discord.gg/gn9aGHAc3U) to collaborate, share ideas, and stay updated on the latest developments.
+Explore our [GitHub organization](https://github.com/variegated-coffee) to access the code, report issues, and contribute. Connect with us on our [Discord server](https://discord.gg/gn9aGHAc3U) to collaborate, share ideas, and stay updated on the latest developments.

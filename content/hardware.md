@@ -8,6 +8,8 @@ weight = 5
 +++
 {{% toc %}}
 
+*Wondering if these projects are for you? Make sure to check out the [Intended Audience](/about/intended-audience) page*
+
 ## Open LCC
 
 Open LCC is a replacement control board for Lelit espresso machines equipped with the LCC (Lelit Control Center) interface. It features a dual microcontroller design with an RP2040 for control functions and an ESP32-S3 for connectivity and display handling, allowing it to replace the stock LCC while providing enhanced functionality. The board supports both the original 128x64 monochrome OLED display or an upgraded high-resolution color TFT.
