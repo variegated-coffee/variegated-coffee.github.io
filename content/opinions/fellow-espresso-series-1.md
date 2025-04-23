@@ -14,6 +14,8 @@ The heating architecture, with a thermoblock pre-heater, a boiler, and then anot
 
 Features like flow and pressure profiling are a welcome addition. Judging by the sound of the machine (as heard in some videos), they are using a vibratory pump, which they presumably use a triac to dim. This is a tried and true method of pressure profiling, but it's not as nice as some more high-end machines which use gear pumps or rotary vane pumps with BLDCs.
 
+They've also clearly given a lot of thought to the UX of the machine, especially in the interface of their controller. This isn't unexpected, as Fellow has a very good track record when it comes to designing nice interfaces. It feels polished.
+
 Also, while very subjective, I think the machine and the accessories look great (although I suspect [Douglas Weber](https://weberworkshops.com/products/buck) may have thoughts on their portafilter design). 
 
 ### What I'm hesitant about
