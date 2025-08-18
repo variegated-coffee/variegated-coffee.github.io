@@ -1,0 +1,383 @@
+/* Project Cards - Reusable component system for Hardware and Carrier pages */
+
+.project-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.project-card {
+  background-color: var(--color-off-white);
+  border: 2px solid var(--color-light-green);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(71, 102, 83, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.project-card:hover {
+  border-color: var(--color-dark-green);
+  box-shadow: 0 6px 12px rgba(71, 102, 83, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Project Header */
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-title {
+  margin: 0;
+  color: var(--color-dark-green);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* Remove the default # prefix for project titles in cards */
+.project-card .project-title::before {
+  content: none;
+}
+
+/* Status Badges */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.status-stable {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.status-active {
+  background-color: #cce7ff;
+  color: #004085;
+  border: 1px solid #99d3ff;
+}
+
+.status-validation {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeaa7;
+}
+
+.status-alpha {
+  background-color: #fde2e4;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.status-planning {
+  background-color: #e2e3ff;
+  color: #383d41;
+  border: 1px solid #c2c7d0;
+}
+
+.status-hiatus {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  border: 1px solid #dee2e6;
+}
+
+/* Project Description */
+.project-description {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.project-description p {
+  margin-bottom: 1rem;
+}
+
+.project-description p:last-child {
+  margin-bottom: 0;
+}
+
+/* Project Features */
+.project-features {
+  background-color: var(--color-light-green);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  border-left: 4px solid var(--color-dark-green);
+}
+
+.project-features h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--color-very-dark-green);
+  font-size: 1.2rem;
+}
+
+.project-features ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.project-features li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.project-features li:last-child {
+  margin-bottom: 0;
+}
+
+.project-features strong {
+  color: var(--color-very-dark-green);
+}
+
+/* Project Status Section */
+.project-status {
+  margin: 1.5rem 0;
+}
+
+.project-status h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.project-status p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Project Actions */
+.project-actions {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid var(--color-dark-green);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.project-button.primary {
+  background-color: var(--color-dark-green);
+  color: var(--color-off-white);
+}
+
+.project-button.primary:hover {
+  background-color: var(--color-light-green);
+  color: var(--color-very-dark-green);
+  transform: translateY(-1px);
+}
+
+.project-button.secondary {
+  background-color: transparent;
+  color: var(--color-dark-green);
+}
+
+.project-button.secondary:hover {
+  background-color: var(--color-light-green);
+  color: var(--color-very-dark-green);
+  transform: translateY(-1px);
+}
+
+/* Project Future */
+.project-future {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-light-green);
+}
+
+.project-future h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+  color: var(--color-dark-green);
+}
+
+.project-future p {
+  margin: 0;
+  line-height: 1.5;
+  color: var(--color-text);
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-card {
+    padding: 1.5rem;
+  }
+  
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+  }
+  
+  .project-actions {
+    flex-direction: column;
+  }
+  
+  .project-button {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-cards-container {
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+    padding: 1.2rem;
+  }
+  
+  .project-features {
+    padding: 1.2rem;
+  }
+}
+
+/* Special styling for subsections within cards */
+.project-card h3 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-dark-green);
+}
+
+.project-card h3:first-of-type {
+  margin-top: 0;
+}
+
+/* Override default heading prefixes in project cards */
+.project-card h3::before {
+  content: none;
+}
+
+/* Ensure links in project cards are styled appropriately */
+.project-card a:not(.project-button) {
+  color: var(--color-dark-green);
+  border-bottom: 2px solid var(--color-dark-green);
+}
+
+.project-card a:not(.project-button):hover {
+  background-color: var(--color-light-green);
+  color: var(--color-very-dark-green);
+}
+
+/* Markdown-based Project Cards Styling */
+
+/* Project Content (generated from Markdown) */
+.project-content {
+  line-height: 1.6;
+}
+
+.project-content p {
+  margin-bottom: 1rem;
+}
+
+.project-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Style sections within project content */
+.project-content h3 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-dark-green);
+}
+
+.project-content h3:first-of-type {
+  margin-top: 0;
+}
+
+/* Override default heading prefixes in project content */
+.project-content h3::before {
+  content: none;
+}
+
+/* Feature list styling - apply to all ul elements in project cards */
+.project-content ul {
+  background-color: var(--color-light-green);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  border-left: 4px solid var(--color-dark-green);
+  padding-left: 2.7rem;
+}
+
+.project-content ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.project-content ul li:last-child {
+  margin-bottom: 0;
+}
+
+.project-content ul strong {
+  color: var(--color-very-dark-green);
+}
+
+/* Project buttons generated from Markdown links with classes */
+.project-content a.project-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid var(--color-dark-green);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.project-content a.project-button.primary {
+  background-color: var(--color-dark-green);
+  color: var(--color-off-white);
+  border-bottom: 2px solid var(--color-dark-green); /* Override default link styling */
+}
+
+.project-content a.project-button.primary:hover {
+  background-color: var(--color-light-green);
+  color: var(--color-very-dark-green);
+  transform: translateY(-1px);
+}
+
+.project-content a.project-button.secondary {
+  background-color: transparent;
+  color: var(--color-dark-green);
+  border-bottom: 2px solid var(--color-dark-green); /* Override default link styling */
+}
+
+.project-content a.project-button.secondary:hover {
+  background-color: var(--color-light-green);
+  color: var(--color-very-dark-green);
+  transform: translateY(-1px);
+}

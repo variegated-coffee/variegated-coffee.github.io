@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	{{ partial "header.html" . }}
+	<body>
+		<div class="content">
+			{{ partial "head.html" . }}
+			
+			<main class="homepage">
+				<section class="hero">
+					<h1 class="hero-slogan">Variegate your machine,<br>elevate your espresso</h1>
+					
+					<div class="hero-description">
+						<p>
+							For <strong>Enginistas</strong> who believe the best espresso machine is the one you already own – upgraded. Instead of replacing your machine when electronics fail or when you want advanced features, our open-source hardware modules let you transform it into a precision instrument that rivals any commercial offering.
+						</p>
+						<p>
+							Our <strong>APEC SoM</strong> and related projects aren't commercial products – they're community-developed modules that require technical knowledge, patience, and a love of both engineering and espresso. For those willing to take the journey, the reward is a deeply customizable machine that reduces e-waste while delivering uncompromising performance.
+						</p>
+					</div>
+
+					<div class="hero-actions">
+						<a href="/hardware/" class="cta-button primary">
+							<span class="icon">⚡</span>
+							Explore Our Hardware
+						</a>
+						<a href="https://discord.gg/gn9aGHAc3U" class="cta-button secondary" target="_blank" rel="noopener">
+							<span class="icon">💬</span>
+							Join the Enginista Community
+						</a>
+						<a href="#project-log" class="cta-button secondary">
+							<span class="icon">🔧</span>
+							See What We're Building
+						</a>
+					</div>
+				</section>
+
+				<section class="transparency">
+					<div class="transparency-content">
+						<p><strong>Important:</strong> Our projects are open-source hardware modules designed for <a href="/about/intended-audience">engineers and technically-minded coffee enthusiasts</a>. They require PCB fabrication, component sourcing, assembly, and electrical safety knowledge. Installation can involve working around mains voltage and pressurized systems. No warranties or formal support – just a passionate community ready to help you learn.</p>
+					</div>
+				</section>
+
+				<section id="project-log" class="project-updates">
+					<h2>Latest from the Project Log</h2>
+					<div class="project-log-intro">
+						<p>Follow our engineering journey as we explore, experiment, and share discoveries. This is where we document challenges, celebrate breakthroughs, and learn together as a community of passionate Enginistas.</p>
+					</div>
+					
+					{{ $pages := where .Site.RegularPages "Section" "project-log" }}
+					{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) 5 }}
+					{{ range $paginator.Pages }}
+					<article class="list-item">
+						<h3 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h3>
+						<time>{{ dateFormat ":date_medium" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time>
+						<br>{{ template "partials/pagedescription.html" . }}
+						<a class="readmore" href="{{ .RelPermalink }}">Read more ⟶</a>
+					</article>
+					{{ end }}
+					
+					{{ if gt $paginator.TotalPages 1 }}
+					<div class="more-posts">
+						<a href="/project-log/" class="view-all">View all project log entries →</a>
+					</div>
+					{{ end }}
+				</section>
+			</main>
+			{{ partial "footer.html" . }}
+		</div>
+	</body>
+</html>

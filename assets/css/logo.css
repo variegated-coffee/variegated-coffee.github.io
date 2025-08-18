@@ -1,0 +1,77 @@
+/* Logo Styling */
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+.logo-link:hover {
+  background-color: transparent !important;
+}
+
+.site-logo {
+  height: 55px;
+  width: auto;
+  vertical-align: middle;
+  border: none !important;
+  border-bottom: none !important;
+  outline: none !important;
+}
+
+.site-title {
+  color: var(--color-dark-green);
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .site-logo {
+    height: 45px;
+  }
+  
+  .site-title {
+    font-size: 1.4rem;
+  }
+  
+  .logo-link {
+    gap: 0.5rem;
+  }
+}
+
+/* Ensure header alignment */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .main {
+  display: flex;
+  align-items: center;
+}
+
+/* Keep nav links inline without flex to preserve underline positioning */
+header nav {
+  line-height: 55px; /* Match logo height for vertical alignment */
+}
+
+/* Override any conflicting styles from main.css and colors.css */
+header .main a {
+  border-bottom: none !important;
+  border: none !important;
+}
+
+header .main a:hover {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* Ensure no borders on any child elements */
+header .logo-link * {
+  border: none !important;
+  border-bottom: none !important;
+}

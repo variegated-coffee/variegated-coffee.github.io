@@ -1,0 +1,29 @@
+{{- $status := .Get "status" -}}
+{{- $title := .Get "title" -}}
+{{- $statusClass := printf "status-%s" $status -}}
+{{- $statusText := "" -}}
+
+{{- if eq $status "stable" -}}
+  {{- $statusText = "Stable" -}}
+{{- else if eq $status "validation" -}}
+  {{- $statusText = "Engineering Validation" -}}
+{{- else if eq $status "alpha" -}}
+  {{- $statusText = "Hardware Stable / Firmware Alpha" -}}
+{{- else if eq $status "active" -}}
+  {{- $statusText = "Active Development" -}}
+{{- else if eq $status "planning" -}}
+  {{- $statusText = "Planning Phase" -}}
+{{- else if eq $status "hiatus" -}}
+  {{- $statusText = "Indefinite Hiatus" -}}
+{{- end -}}
+
+<div class="project-card">
+  <div class="project-header">
+    <h2 class="project-title">{{ $title }}</h2>
+    <span class="status-badge {{ $statusClass }}">{{ $statusText }}</span>
+  </div>
+  
+  <div class="project-content">
+    {{ .Inner | markdownify }}
+  </div>
+</div>
