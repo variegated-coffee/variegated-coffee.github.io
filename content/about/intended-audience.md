@@ -20,6 +20,7 @@ As **open-source hardware**, you are responsible for:
 - **Manufacturing the boards yourself** or arranging production with a PCB fabrication service
 - **Sourcing components** and managing the supply chain
 - **Assembly and testing** - all critical steps that require attention to detail and technical knowledge
+- **Compliance** - any and all actions needed to ensure, demonstrate and/or certify compliance with applicable regulations in relevant jurisdictions
 
 ## Safety Considerations
 
