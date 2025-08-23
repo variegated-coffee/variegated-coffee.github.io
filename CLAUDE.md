@@ -67,7 +67,7 @@ When adding new content:
 - Images should be placed in `/static/images/`
 - Use front matter for title, date, draft status, and menu configuration
 
-## Brand Guidelines
+## Branding Guidelines
 
 ### Colors
 The site uses a nature-inspired green color palette that aligns with the coffee leaf logo:
@@ -83,63 +83,172 @@ The site uses a nature-inspired green color palette that aligns with the coffee 
 - Displayed at 40px height in the header (32px on mobile)
 - Always paired with the site title when used
 
-### Typography & Tone
-- Technical but approachable
-- Focus on the engineering/hacker spirit
-- Emphasize sustainability and open-source values
+## Brand Overview
 
-## Project Values & Communication Style
+### Mission Statement
+At Variegated Coffee, we're on a mission to revolutionize espresso technology through open-source hardware and firmware that empowers both innovation and sustainability. We believe your coffee equipment should evolve with you, not be replaced.
+
+### Brand Promise
+We create modular, adaptable solutions that extend the lifespan of existing espresso machines while building a community of enthusiasts who share designs and innovations.
 
 ### Core Values
-When creating content, always reflect these fundamental project values:
+- **Innovation**: Pushing the boundaries of what's possible with espresso technology
+- **Sustainability**: Reducing electronic waste by upgrading components rather than replacing entire machines
+- **Community**: Building a collaborative ecosystem of makers, enthusiasts, and small manufacturers
+- **Accessibility**: Making advanced espresso technology available to hobbyists and DIY enthusiasts
+- **Transparency**: Open-source hardware and firmware ensuring repairs and modifications remain possible
 
-**Sustainability First**
-- Prioritize upgrading over replacing equipment
-- Reduce electronic waste through thoughtful design
-- Extend machine lifecycles rather than encouraging disposability
-- Consider environmental impact in all recommendations
+## Brand Personality
 
-**Open Source Philosophy** 
-- Emphasize transparency, community collaboration, and repairability
-- Acknowledge that projects come with no warranties or formal support
-- Encourage community knowledge sharing and troubleshooting
-- Make clear that these are modules/components, not finished products
+### Primary Traits
+- **Technical Excellence**: We approach every problem with engineering rigor and attention to detail
+- **Maker-Friendly**: We speak the language of tinkerers, hackers, and passionate coffee enthusiasts
+- **Realistic Optimism**: We're excited about possibilities while being honest about challenges and prerequisites
+- **Community-Driven**: We celebrate collective knowledge and shared innovation
 
-**Quality Over False Economy**
-- Time has real value in component selection decisions
-- Cheap components often have hidden costs in debugging time
-- Professional engineers know where corners can and can't be cut
-- Balance frugality with reliability and project success
+### Voice Characteristics
+- Technically precise without being intimidating
+- Enthusiastic about innovation while maintaining safety awareness
+- Educational and empowering rather than promotional
+- Respectful of users' intelligence and capabilities
+- Transparent about both successes and failures
 
-**Safety and Transparency**
-- Always acknowledge safety risks (mains voltage, pressurized systems)
-- Be honest about technical requirements and limitations
-- Assume competence while providing necessary education
-- Clear disclaimers about electrical safety knowledge requirements
+## Messaging Framework
 
-**Community-Centered**
-- Address the "Enginista" audience - engineers who are home baristas
-- Value the journey as much as the destination
-- Foster collaboration and knowledge sharing
-- Build inclusive technical community
+### Primary Messages
 
-### Communication Guidelines
+#### Innovation & Possibility
+- "Revolutionize your espresso machine with open-source hardware"
+- "Transform your equipment into a customizable platform that grows with your needs"
+- "Unlock capabilities that would cost thousands in commercial equipment"
 
-**Voice and Tone**
-- Technical but accessible - explain concepts clearly without oversimplifying
-- Enthusiastic but grounded - passionate yet realistic about expectations
-- Honest about trade-offs - acknowledge limitations, complexity, and risks
-- Inclusive community voice - use "we" and invite participation
+#### Sustainability Focus
+- "Extend your machine's lifespan, not the landfill"
+- "Upgrade components, not entire machines"
+- "Your coffee equipment should evolve with you, not be replaced"
 
-**Content Approach**
-- Lead with sustainability benefits when relevant
-- Weave environmental consciousness throughout messaging
-- Assume technical competence while educating
-- Balance detailed technical information with broader purpose
-- Always mention safety considerations for electrical work
+#### Community Empowerment
+- "Join the innovation community"
+- "Share designs, advance collective knowledge"
+- "Every installation makes the project better for everyone"
 
-**Community Engagement**
-- Encourage GitHub contributions and Discord participation  
+### Target Audience Communication
+
+#### For DIY Enthusiasts
+- Emphasize the learning journey and maker culture
+- Highlight technical challenges as opportunities for growth
+- Focus on community support and shared problem-solving
+
+#### For Small Manufacturers
+- Stress economical small-batch production capabilities
+- Emphasize modular design benefits for custom solutions
+- Highlight simplified development through standardized components
+
+#### For Coffee Professionals
+- Focus on precision control and data-driven brewing
+- Emphasize reliability and performance improvements
+- Highlight integration with existing workflows
+
+## Tone Guidelines
+
+### Do's
+- Use technically precise language that respects reader intelligence
+- Lead with excitement about possibilities, followed by clear prerequisites
 - Frame challenges as learning opportunities
-- Acknowledge that success requires patience and methodical approach
-- Emphasize collaborative problem-solving over individual expertise
+- Celebrate both successes and productive failures
+- Provide specific, actionable guidance
+
+### Don'ts
+- Use marketing language that glosses over technical complexity
+- Hide important information in disclaimers or fine print
+- Oversimplify installation or safety considerations
+- Assume all users have the same technical background
+- Present projects as plug-and-play consumer products
+
+### Example Tone Comparison
+
+**Instead of:** "Upgrade your espresso machine with our amazing board!"
+
+**Use:** "Ready to push your La Marzocco beyond factory limitations? This controller board lets you precisely manage brew temperature, create pressure profiles, and visualize flow rates - all while maintaining safety and extending the life of your machine."
+
+## Content Strategy
+
+### Documentation Approach
+
+#### Project Introductions
+1. **Lead with Innovation**: Start with exciting capabilities and possibilities
+2. **Establish Prerequisites**: Clearly define required knowledge and skills
+3. **Address Environment**: Explain the technical context (mains voltage, pressure systems, etc.)
+4. **Provide Safety Guidance**: Offer specific, actionable safety procedures
+5. **Frame Community Context**: Position as collaborative learning experience
+
+#### Safety Communication
+- Present safety information matter-of-factly, not as buried disclaimers
+- Use technical specificity rather than vague warnings
+- Provide concrete examples from community experience
+- Include proper procedures for specific project requirements
+- Distinguish between different risk levels across projects
+
+#### Community Content
+- Document processes, including challenges and setbacks
+- Share specific machine adaptations and solutions
+- Celebrate learning experiences and problem-solving
+- Provide templates for community contributions
+- Highlight collective advancement of knowledge
+
+### Visual Guidelines
+
+#### Documentation Visuals
+- Use circuit diagrams and labeled photos rather than conceptual illustrations
+- Clearly identify areas where mains voltage is present
+- Show actual workspace setups with appropriate safety measures
+- Demonstrate component interactions with existing machine systems
+- Include before/after comparisons from community implementations
+- Document failure modes to aid troubleshooting
+
+#### Content Hierarchy
+- Structure information with clear prerequisites at each stage
+- Use progressive disclosure for complex technical information
+- Provide multiple entry points for different skill levels
+- Include quick reference sections for experienced users
+
+## Brand Applications
+
+### Project Naming
+- Use descriptive, technical names that indicate function
+- Avoid marketing-heavy naming conventions
+- Consider acronyms that expand into clear descriptions (APEC, LCC)
+- Maintain consistency across project family
+
+### Communication Channels
+
+#### Documentation
+- Comprehensive guides with realistic timelines and prerequisites
+- Clear distinction between different complexity levels
+- Integration of safety information throughout, not segregated
+- Regular updates based on community feedback and experiences
+
+#### Community Platforms
+- Encourage sharing of both successes and challenges
+- Provide templates for documenting implementations
+- Facilitate knowledge sharing between projects
+- Support troubleshooting and collaborative problem-solving
+
+#### Technical Specifications
+- Detailed component information with substitution guidelines
+- Clear power requirements and limitations
+- Integration guides for different machine types
+- Compatibility matrices for various configurations
+
+## Legal and Safety Framework
+
+### Responsibility Communication
+Include clear responsibility language that protects the project while maintaining appropriate tone:
+
+*"The Variegated Coffee project is an experimental, community-driven initiative. By using these designs and software, you're working with machines that contain mains voltage, pressure systems, and heating elements. You take full responsibility for any modifications you make to your equipment and how you implement these changes. Neither the project creators nor contributors are responsible for what happens when you use these designs."*
+
+### Implementation Guidelines
+- Place responsibility information naturally within safety sections
+- Use conversational tone rather than intimidating legal language
+- Reference formal license terms without repeating them
+- Integrate with rather than separate from technical content
