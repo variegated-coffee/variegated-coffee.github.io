@@ -7,6 +7,16 @@
   --color-terra-cotta: rgb(216, 180, 154);
   --color-very-dark-green: rgb(37, 51, 41);
   --bordercl: rgb(71, 102, 83);
+  
+  /* Override theme variables with our green color scheme */
+  --maincolor: var(--color-dark-green);
+  --hovercolor: var(--color-light-green);
+  
+  /* Table colors */
+  --color-table-bg: rgb(252, 251, 245);
+  --color-table-border: rgb(180, 195, 180);
+  --color-table-header: rgb(235, 240, 230);
+  --color-table-row-alt: rgb(248, 248, 242);
 }
 
 body {

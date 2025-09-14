@@ -9,7 +9,7 @@ pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
 [params]
-	customcss = ["css/colors.css", "css/font-sizes.css", "css/homepage.css", "css/logo.css", "css/project-cards.css"]
+	customcss = ["css/fonts.css", "css/colors.css", "css/font-sizes.css", "css/typography.css", "css/homepage.css", "css/logo.css", "css/project-cards.css", "css/tables.css"]
 	mode="light" # color-mode → light,dark,toggle or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
 	subtitle = "Open source hardware and firmware for espresso machines"

@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(hugo server:*)"
+      "Bash(hugo server:*)",
+      "WebFetch(domain:localhost)",
+      "Bash(curl:*)"
     ],
     "deny": [],
     "ask": []

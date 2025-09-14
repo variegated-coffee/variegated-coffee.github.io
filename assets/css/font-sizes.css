@@ -1,3 +1,7 @@
+/* Golden Ratio Typography Scale (φ = 1.618) */
+/* These override the base theme sizes for better hierarchy */
+
+/* Preserve existing sizes for non-article content */
 h1 {
   font-size: 1.35rem;
   margin-top: 2em;
@@ -26,4 +30,51 @@ h5 {
 h6 {
   font-size: 0.7rem;
   margin-top: 2em;
+}
+
+/* Golden Ratio Scale for Article Content */
+/* Calculated using φ (1.618) with base 16px */
+
+article h1, .content h1:not(.hero-slogan):not(.title) {
+  font-size: 2.427rem;   /* φ^1.5 ≈ 39px */
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+article h2, .content h2:not(.project-updates h2) {
+  font-size: 1.888rem;   /* φ^1.2 ≈ 30px */
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+article h3, .content h3:not(.project-updates h3):not(.title) {
+  font-size: 1.5rem;     /* φ^0.9 ≈ 24px */
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+article h4 {
+  font-size: 1.272rem;   /* φ^0.6 ≈ 20px */
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+article h5 {
+  font-size: 1.125rem;   /* φ^0.4 ≈ 18px */
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+article h6 {
+  font-size: 1rem;       /* Base 16px */
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }

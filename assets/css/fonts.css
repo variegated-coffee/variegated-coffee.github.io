@@ -1,0 +1,19 @@
+/* Additional font weights for Fira Sans */
+
+/* fira-sans-semibold - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/fira-sans-v17-latin-600.woff2') format('woff2');
+}
+
+/* fira-sans-bold - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/fira-sans-v17-latin-700.woff2') format('woff2');
+}

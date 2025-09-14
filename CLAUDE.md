@@ -36,6 +36,14 @@ The site automatically deploys to GitHub Pages when changes are pushed to the ma
   - `/opinions/` - Opinion pieces and reviews
   - `/project-log/` - Development blog entries (dated YYYY-MM-DD.md)
 
+### Context Directory
+- `/context/` - **CRITICAL REFERENCE MATERIALS** - Always consult when writing content
+  - Contains essential documentation about projects, technical details, and brand voice
+  - Review thoroughly before creating or editing any content
+  - Provides real examples of the Variegated Coffee communication style
+  - Includes project specifications, architecture details, and implementation guidelines
+  - Essential for maintaining consistency in tone, technical accuracy, and messaging
+
 ### Project Documentation
 - `/projects/` - Detailed project documentation (not in content/)
   - `/hardware/` - Hardware project specifications (APEC SoM, Open LCC, Gravity, etc.)
@@ -62,10 +70,12 @@ The site uses Hugo Extended v0.128.0+ with:
 ## Content Guidelines
 
 When adding new content:
+- **ALWAYS** review the `/context/` directory first to understand project details and communication style
 - Project log entries should be named `YYYY-MM-DD.md` in `/content/project-log/`
 - Hardware documentation goes in `/projects/hardware/`
 - Images should be placed in `/static/images/`
 - Use front matter for title, date, draft status, and menu configuration
+- Reference materials in `/context/` for accurate technical details and brand voice examples
 
 ## Branding Guidelines
 

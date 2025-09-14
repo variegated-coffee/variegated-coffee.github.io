@@ -1,0 +1,368 @@
+/* Typography System - Variegated Coffee */
+/* Using Golden Ratio (φ = 1.618) for harmonious proportions */
+
+/* =================================================================
+   Core Typography Fix - Lists and Body Text
+   ================================================================= */
+
+/* Fix list typography - highest priority issue */
+ul, ol {
+  font-family: 'Fira Sans', sans-serif !important;
+  line-height: 1.7;
+}
+
+/* Ensure all text content uses sans-serif for readability */
+p, li, dd, dt, blockquote, figcaption, td, th {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+/* Keep monospace ONLY for code and technical elements */
+code, pre, kbd, samp, tt, .highlight {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* Better bullet points for improved scannability */
+/* Use child combinator to only affect direct children */
+ul > li::before {
+  content: '•';
+  font-weight: bold;
+  margin-right: 0.5em;
+  color: var(--color-dark-green);
+}
+
+/* Ordered lists with better spacing */
+ol {
+  counter-reset: ol-counter;
+  list-style: none;
+  padding-left: 2rem;
+}
+
+/* Only direct children of ol should be numbered */
+ol > li {
+  counter-increment: ol-counter;
+  text-indent: -1.5rem;
+}
+
+ol > li::before {
+  content: counter(ol-counter) ".";
+  font-weight: bold;
+  margin-right: 0.5em;
+  color: var(--color-dark-green);
+}
+
+/* Reset list-style for nested lists to prevent inheritance issues */
+ol ul {
+  list-style: none;
+  counter-reset: none;
+}
+
+ol ol {
+  counter-reset: ol-nested-counter;
+}
+
+/* Nested ordered lists use alphabetic numbering */
+ol ol > li {
+  counter-increment: ol-nested-counter;
+}
+
+ol ol > li::before {
+  content: counter(ol-nested-counter, lower-alpha) ".";
+  font-weight: bold;
+  margin-right: 0.5em;
+  color: var(--color-dark-green);
+}
+
+/* =================================================================
+   Base Text Settings
+   ================================================================= */
+
+/* Better base readability */
+html {
+  font-size: 16px;  /* Up from 15px - our base unit for golden ratio */
+}
+
+/* Body paragraphs with golden ratio line height */
+article p, .content p:not(.hero-description p):not(.transparency-content p) {
+  line-height: 1.618;  /* Golden ratio for optimal readability */
+  margin-bottom: 1.25rem;
+}
+
+/* List item spacing using golden ratio */
+article li {
+  margin-bottom: 0.618rem;  /* φ - 1 for balanced spacing */
+  line-height: 1.618;
+}
+
+/* Remove extra margin from last list item */
+article li:last-child {
+  margin-bottom: 0;
+}
+
+/* Fix paragraph spacing inside list items */
+/* Remove paragraph margins when paragraphs are direct children of list items */
+li > p {
+  margin-bottom: 0;
+  margin-top: 0;
+  display: inline;  /* Keep paragraph content inline with list marker */
+}
+
+/* When a paragraph is followed by a nested list, add some space */
+li > p + ul,
+li > p + ol {
+  margin-top: 0.5rem;
+  display: block;  /* Ensure nested lists appear on new line */
+}
+
+/* Multiple paragraphs in same list item need spacing between them */
+li > p + p {
+  margin-top: 0.5rem;
+  display: block;  /* Second paragraph should be on new line */
+}
+
+/* Ensure proper line height is maintained for list item paragraphs */
+li > p {
+  line-height: inherit;  /* Use the list item's line height */
+}
+
+/* =================================================================
+   Enhanced Text Emphasis
+   ================================================================= */
+
+/* Enhanced strong tags for better visual emphasis */
+strong, b {
+  font-weight: 700;  /* Stronger than default 600 */
+  color: var(--color-very-dark-green);  /* Slightly darker for better contrast */
+}
+
+/* Strong tags inside list items need extra emphasis for procedure headers */
+li strong {
+  font-weight: 800;  /* Maximum emphasis for step headers */
+}
+
+/* Strong tags in headings should maintain hierarchy */
+h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
+  font-weight: inherit;  /* Don't make headings too heavy */
+  color: inherit;  /* Maintain heading color */
+}
+
+/* Strong tags in hero/special sections should maintain their styling */
+.hero-description strong,
+.transparency-content strong {
+  font-weight: 600;  /* Maintain existing design */
+  color: var(--color-dark-green);  /* Keep original color */
+}
+
+/* Nested lists with appropriate indentation */
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0.618rem;
+  margin-bottom: 0.618rem;
+  padding-left: 1.618rem;
+}
+
+/* =================================================================
+   Golden Ratio Heading Scale
+   ================================================================= */
+
+/* 
+   Golden Ratio Scale (φ = 1.618)
+   Base: 1rem (16px)
+   Scale uses powers of φ for natural hierarchy
+*/
+
+/* Article headings only - preserves homepage hero and navigation */
+article h1, .content h1:not(.hero-slogan):not(.title) {
+  font-size: 2.427rem;   /* φ^1.5 ≈ 39px - Major page titles */
+  line-height: 1.2;
+  margin-top: 30px;  /* Add 30px space between header and h1 */
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: var(--color-dark-green);
+  font-family: 'Fira Sans', sans-serif;
+}
+
+article h2, .content h2:not(.project-updates h2) {
+  font-size: 1.888rem;   /* φ^1.2 ≈ 30px - Primary sections */
+  line-height: 1.3;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--color-dark-green);
+  font-family: 'Fira Sans', sans-serif;
+}
+
+article h3, .content h3:not(.project-updates h3):not(.title) {
+  font-size: 1.5rem;     /* φ^0.9 ≈ 24px - Subsections */
+  line-height: 1.4;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  color: var(--color-dark-green);
+  font-family: 'Fira Sans', sans-serif;
+}
+
+article h4 {
+  font-size: 1.272rem;   /* φ^0.6 ≈ 20px - Minor headings */
+  line-height: 1.4;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--color-dark-green);
+  font-family: 'Fira Sans', sans-serif;
+}
+
+article h5 {
+  font-size: 1.125rem;   /* φ^0.4 ≈ 18px - Small headings */
+  line-height: 1.5;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--color-dark-green);
+  font-family: 'Fira Sans', sans-serif;
+}
+
+article h6 {
+  font-size: 1rem;       /* Base 16px - Smallest heading */
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-dark-green);
+  font-family: 'Fira Sans', sans-serif;
+}
+
+/* =================================================================
+   Enhanced Readability Features
+   ================================================================= */
+
+/* Blockquotes with better typography */
+blockquote {
+  font-family: 'Fira Sans', sans-serif;
+  font-style: italic;
+  line-height: 1.618;
+  padding-left: 1.618rem;
+}
+
+/* Definition lists */
+dl {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+dt {
+  font-weight: 600;
+  margin-top: 1rem;
+  color: var(--color-dark-green);
+}
+
+dd {
+  margin-left: 1.618rem;
+  margin-bottom: 0.618rem;
+}
+
+/* =================================================================
+   Tables with Improved Typography
+   ================================================================= */
+
+table {
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.5;
+}
+
+th {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* =================================================================
+   Mobile Responsive Typography
+   ================================================================= */
+
+@media (max-width: 768px) {
+  /* Scale down by φ^-0.2 (≈ 0.85) to maintain golden ratio */
+  html {
+    font-size: 15px;
+  }
+  
+  article h1:not(.hero-slogan):not(.title) {
+    font-size: 2.063rem;  /* 85% of desktop */
+  }
+  
+  article h2:not(.project-updates h2) {
+    font-size: 1.605rem;
+  }
+  
+  article h3:not(.project-updates h3):not(.title) {
+    font-size: 1.275rem;
+  }
+  
+  article h4 {
+    font-size: 1.081rem;
+  }
+  
+  article h5 {
+    font-size: 1rem;
+  }
+  
+  article h6 {
+    font-size: 0.875rem;
+  }
+  
+  /* Adjust list indentation for mobile */
+  ul, ol {
+    padding-left: 1.5rem;
+  }
+  
+  ul ul, ol ol, ul ol, ol ul {
+    padding-left: 1.25rem;
+  }
+}
+
+/* =================================================================
+   Print Styles
+   ================================================================= */
+
+@media print {
+  /* Optimize typography for print */
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+  
+  p, li {
+    orphans: 3;
+    widows: 3;
+  }
+}
+
+/* =================================================================
+   Accessibility Enhancements
+   ================================================================= */
+
+/* Focus styles for better keyboard navigation */
+h1:focus, h2:focus, h3:focus, h4:focus, h5:focus, h6:focus {
+  outline: 2px solid var(--color-dark-green);
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+  }
+  
+  p, li {
+    font-weight: 400;
+  }
+}
+
+/* Reduced motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+  }
+}
