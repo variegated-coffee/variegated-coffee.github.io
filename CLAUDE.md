@@ -262,3 +262,4 @@ Include clear responsibility language that protects the project while maintainin
 - Use conversational tone rather than intimidating legal language
 - Reference formal license terms without repeating them
 - Integrate with rather than separate from technical content
+- Never make changes in the themes/archie directory - it is a git submodule over which we have no control

@@ -1,5 +1,14 @@
 /* Additional font weights for Fira Sans */
 
+/* fira-sans-light - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/fira-sans-v17-latin-300.woff2') format('woff2');
+}
+
 /* fira-sans-semibold - latin */
 @font-face {
   font-display: swap;
@@ -16,4 +25,32 @@
   font-style: normal;
   font-weight: 700;
   src: url('/fonts/fira-sans-v17-latin-700.woff2') format('woff2');
+}
+
+/* =================================================================
+   Font Rendering Optimizations
+   ================================================================= */
+
+/* Use lighter font weight for better body text readability */
+p, li, dd, dt, blockquote, figcaption, td, th {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300; /* Use light weight instead of regular */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Also apply to lists */
+ul, ol {
+  font-family: 'Fira Sans', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Ensure base body text has optimized rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }

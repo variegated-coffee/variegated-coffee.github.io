@@ -90,7 +90,8 @@ Hardware revision R3B is stable and proven. Firmware remains in alpha state with
 
 Adding a LiPo charge controller and battery connector is under consideration for enhanced portability. No other functional changes are planned.
 
-<a href="https://github.com/variegated-coffee/gravity" class="project-button primary" target="_blank" rel="noopener">📁 View Repository</a>
+<a href="/hardware/gravity" class="project-button primary">📖 View Project Page</a>
+<a href="https://github.com/variegated-coffee/gravity" class="project-button secondary" target="_blank" rel="noopener">📁 View Repository</a>
 
 {{% /project-card %}}
 

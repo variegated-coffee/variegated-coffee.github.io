@@ -27,7 +27,7 @@ Active development. The basics are working well, with ongoing work on UI develop
 
 {{% /project-card %}}
 
-{{% project-card status="planning" title="La Marzocco GS3 AV Carrier" %}}
+{{% project-card status="active" title="La Marzocco GS3 AV Carrier" %}}
 
 The GS3 Carrier is planned to both be a drop-in replacement for the Gicar 3d5 board, and to support advanced modifications for the La Marzocco GS3. It builds on the platform's excellent foundation for creating an "ultimate espresso machine." The design aims to be both flexible and compatible.
 
@@ -42,7 +42,7 @@ The GS3 Carrier is planned to both be a drop-in replacement for the Gicar 3d5 bo
 
 ### Current Status
 
-Early planning and design phase. Pin assignments, measurements, and layout work in progress. See [project log](/project-log/) for development updates.
+A first engineering validation revision has been built. See [project log](/project-log/) for development updates.
 
 {{% /project-card %}}
 

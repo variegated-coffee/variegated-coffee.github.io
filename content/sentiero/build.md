@@ -1,7 +1,7 @@
 +++
 title = 'Building a Sentiero'
-date = 2025-08-24T12:00:00+02:00
-draft = false
+date = 2026-08-24T12:00:00+02:00
+draft = true
 [params]
   author = 'Magnus Nordlander'
 +++

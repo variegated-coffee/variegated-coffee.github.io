@@ -11,9 +11,13 @@ ul, ol {
   line-height: 1.7;
 }
 
-/* Ensure all text content uses sans-serif for readability */
+/* Ensure all text content uses sans-serif for readability with optimized rendering */
 p, li, dd, dt, blockquote, figcaption, td, th {
   font-family: 'Fira Sans', sans-serif;
+  font-weight: 400; /* Keep regular weight but optimize rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 /* Keep monospace ONLY for code and technical elements */

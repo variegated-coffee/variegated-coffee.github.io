@@ -1,7 +1,7 @@
 +++
 title = '2025-08-24: Design for Maintainability'
 date = 2025-08-24T20:00:00+02:00
-draft = false
+draft = true
 [params]
   author = 'Magnus Nordlander'
 +++
